@@ -21,10 +21,14 @@ defmodule TweetMegaphone.Mixfile do
   defp elixirc_paths(_),     do: ["lib", "web"]
 
   defp deps do
-    [{:phoenix, "~> 0.11"},
-     {:phoenix_ecto, "~> 0.3"},
-     {:postgrex, ">= 0.0.0"},
-     {:phoenix_live_reload, "~> 0.3"},
-     {:cowboy, "~> 1.0"}]
+    [
+      {:extwitter, "~> 0.2"},
+      {:oauth, github: "tim/erlang-oauth"},
+      {:phoenix, "~> 0.11"},
+      {:phoenix_ecto, "~> 0.3"},
+      {:postgrex, ">= 0.0.0"},
+      {:phoenix_live_reload, "~> 0.3"},
+      {:cowboy, "~> 1.0"}
+    ]
   end
 end
