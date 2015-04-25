@@ -8,3 +8,5 @@ erl_crash.dump
 
 # Static artifacts
 /node_modules
+
+.env
