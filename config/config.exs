@@ -9,7 +9,7 @@ use Mix.Config
 config :tweet_megaphone, TweetMegaphone.Endpoint,
   url: [host: "localhost"],
   root: Path.expand("..", __DIR__),
-  secret_key_base: "n8DM7S1qZGVMcqOiKCLLISe4vy9M8rzaip+dX2G1AfbsuChhbQm3AodLbmD74cUi",
+  secret_key_base: System.get_env("SECRET_KEY_BASE"),
   debug_errors: false,
   pubsub: [name: TweetMegaphone.PubSub,
            adapter: Phoenix.PubSub.PG2]
